@@ -6,7 +6,7 @@ import {
   Container, Row, Col, Card, CardBody,
   CardTitle, CardText, CardImg, Button
 } from "reactstrap";
-import HOC from "../hoc/HOC";
+import HOC from "hoc";
 import actions from "../actions/test";
 import selectors from "../selectors/test";
 
@@ -16,9 +16,9 @@ function Home(props) {
   return (
     <>
       <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Container className="mt-5 mb-5">
         <Row>
           {repos && repos.map((repo) => (

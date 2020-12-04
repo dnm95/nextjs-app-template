@@ -14,7 +14,6 @@ function* watchTestSaga(action) {
       payload: { repos },
     });
   } catch (err) {
-    console.log(err);
     return yield put({ type: actions.REQUEST_REPOS_FAILED });
   }
 }
